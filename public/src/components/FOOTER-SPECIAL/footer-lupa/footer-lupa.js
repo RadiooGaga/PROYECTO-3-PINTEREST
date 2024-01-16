@@ -7,7 +7,7 @@ export const createLupita = (parentDiv, mainGallery) => {
     divLupa.className = "divLupa";
     const lupita = document.createElement("img");
     lupita.className = "lupita";
-    lupita.src = "./public/assets/icons/lupa.png";
+    lupita.src = "./public/src/assets/icons/lupa.png";
     
     parentDiv.appendChild(divLupa);
     divLupa.appendChild(lupita);

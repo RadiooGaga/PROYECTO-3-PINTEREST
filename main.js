@@ -19,7 +19,7 @@ const divLogo = document.createElement("div");
 divLogo.className = "divLogo";
 const imgLogo = document.createElement("img");
 imgLogo.className = "picLogo";
-imgLogo.src = "./public/assets/logos/pinterest-logo.jpeg";
+imgLogo.src = "./public/src/assets/logos/pinterest-logo.jpeg";
 sectionHeader.appendChild(divLogo);
 divLogo.appendChild(imgLogo);
 
@@ -47,14 +47,14 @@ const divMessages = document.createElement("div");
 divMessages.className = "divMessages";
 const imgMessage = document.createElement("img");
 imgMessage.className = "messageImg";
-imgMessage.src = "./public/assets/icons/messageIcon.svg";
+imgMessage.src = "./public/src/assets/icons/messageIcon.svg";
 
 //div usuario smartphone
 const divUser = document.createElement("div");
 divUser.className = "divUser";
 const imgUser = document.createElement("img");
 imgUser.className = "imgUser";
-imgUser.src = "./public/assets/icons/userIcon.svg";
+imgUser.src = "./public/src/assets/icons/userIcon.svg";
 
 
 reset(sectionHeader, mainGallery);
@@ -63,11 +63,11 @@ crearButton(sectionHeader, "Crear");
 searchBar(sectionHeader, mainGallery,"Buscar");
 searchInfo("random", mainGallery);
 createLupita(sectionFooter, mainGallery);
-notificationsButton(sectionHeader,"./public/assets/icons/bellIcon.svg");
-messagesButton(sectionHeader, "./public/assets/icons/messageIcon.svg");
-userButton(sectionHeader, "./public/assets/icons/userIcon.svg");
-accountButton(sectionHeader, "./public/assets/icons/flecha-hacia-abajo.png");
-inicioButtonHouse(sectionFooter, mainGallery, "./public/assets/icons/home.svg");
+notificationsButton(sectionHeader,"./public/src/assets/icons/bellIcon.svg");
+messagesButton(sectionHeader, "./public/src/assets/icons/messageIcon.svg");
+userButton(sectionHeader, "./public/src/assets/icons/userIcon.svg");
+accountButton(sectionHeader, "./public/src/assets/icons/flecha-hacia-abajo.png");
+inicioButtonHouse(sectionFooter, mainGallery, "./public/src/assets/icons/home.svg");
 
 
 sectionFooter.appendChild(divMessages);
