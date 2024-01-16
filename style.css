@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --rtc-font-family-1: Arial, Helvetica, sans-serif;
+
+    --rtc-color-red: #ff0000;
+    --rtc-color-black:#000000;
+    --rtc-color-white:#ffffff;
+    --rtc-color-lightGrey:#ebedee;
+
+    --font-size-l: 20px;
+    --font-size-m: 16px;
+    --font-size-ms: 12px;
+    --font-size-s: 10px;
+
+    --padding-xl: 16px;
+    --padding-l: 14px;
+    --padding-m: 10px;
+    --padding-s: 6px;
+    --padding-xs: 2px;
+    
+}
+
+#pinterestHeader {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--padding-l);
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--rtc-color-white);
+    position: fixed;
+    z-index: 1;
+}
+
+
+/* hover botones */
+.inicioButton:hover, .explorarButton:hover, .crearButton:hover, .picLogo:hover,
+.divBell:hover, .divMessages:hover, .divUserProfile:hover, .divAccount:hover {
+    cursor: pointer;
+} 
+
+.inicioButton:hover, .explorarButton:hover, .crearButton:hover {
+    background-color: var(--rtc-color-black);
+    color: var(--rtc-color-white);
+}
+
+.inicioButton, .explorarButton, .crearButton {
+    background-color: var(--rtc-color-white);
+    color:var(--rtc-color-black);
+    font-family: var(--rtc-font-family-1);
+    font-size: var(--font-size-m);
+    padding: var(--padding-l);
+    border-radius: 24px;
+    border: none;
+}
+
+
+/* imagenes de header */
+.picLogo, .bell, .messageImg, .imgUser, .imgAccount, .house, .lupita {
+    width: 28px;
+}
+
+#pinterestHeader > div {
+    padding: 0 12px 0 12px; 
+}
+
+.divSearch {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    padding: 0 1em;
+    align-items: center;
+}
+
+.searchPlaceholder {
+    width: 100%;
+    height: 48px;
+    border-radius: 20px;
+    border: none;
+    padding: 0 10px 0 10px;
+    background-color: var(--rtc-color-lightGrey) ;
+}
+
+#smartphoneSearchBar {
+    display: none;
+}
+
+#pinterestGallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainGallery {
+    width: 100%;
+    padding: 0.5em 3em;
+    justify-content: center;
+    columns: 7;
+    gap: 18px;
+    position: relative;
+    top: 5em;
+    z-index: 0;
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+/* media queries */
+@media screen and (max-width:480px) {
+
+    #pinterestHeader {
+        display: none;
+    }
+    #smartphoneSearchBar {
+        display: flex;
+        width: 100%;
+    }
+
+    #pinterestFooter, footer {
+        width: 100%;
+        height: 80px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: repeat(1, 1fr);
+        align-items: center;
+        background-color: var(--rtc-color-white);
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .divHouseReset, .divLupa, .divMessages, .divUser {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainGallery {
+        padding: 1em;
+        columns: 2;
+        gap: 8px;
+        height: auto;
+        position: relative;
+        top: 0.2em;
+        z-index: 0;
+        scroll-behavior: smooth;
+    }
+}
+
+
+@media screen and (min-width:481px) and (max-width:768px) {
+
+    span {
+        display: flex;
+        justify-content: center;
+        font-family: var(--rtc-font-family-1);
+        font-size: var(--font-size-ms);
+    }
+
+    #pinterestHeader {
+        display: none;
+    }
+
+    #smartphoneSearchBar {
+        display: flex;
+        width: 100%;
+    }
+
+    #pinterestFooter, footer {
+        width: 100%;
+        height: 90px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: repeat(1, 1fr);
+        align-items: center;
+        padding-bottom: 10px;
+        background-color: var(--rtc-color-white);
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .indexNames {
+        width: 100%;
+        height: 10px;
+        background-color: var(--rtc-color-white);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: repeat(1, 1fr);
+        justify-content: center;
+        align-content: center;
+        padding-bottom: 20px;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+
+
+    .divHouseReset, .divLupa, .divMessages, .divUser {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .mainGallery {
+        padding: 1em;
+        columns: 3;
+        gap: 12px;
+        height: auto;
+        position: relative;
+        top: 0.2em;
+        z-index: 0;
+        scroll-behavior: smooth;
+    }
+}
+
+
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+    #smartphoneSearchBar {
+        display: none;
+    }
+
+    .divLogo, .divBell, .divMessage, .divUserProfile, .divAccount {
+        padding: 0 5px 0 5px;
+    }
+
+    .inicioButton, .explorarButton, .crearButton {
+        font-size: var(--font-size-m);
+        padding: var(--padding-xs);
+    }
+
+    .mainGallery {
+        padding: 0 1em;
+        columns: 5;
+        gap: 16px; 
+        top: 4em;  
+    }
+
+    #pinterestFooter, footer {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width:1024px) and (max-width:1280px) {
+
+    #smartphoneSearchBar {
+        display: none;
+    }
+
+    .divLogo, .divBell, .divMessage, .divUserProfile, .divAccount {
+        padding: 0 6px 0 6px;
+    }
+
+    .inicioButton, .explorarButton, .crearButton {
+        font-size: var(--font-size-m);
+        padding: var(--padding-s);
+    }
+
+    .mainGallery {
+        padding: 0 2em;
+        columns: 6;
+        gap: 16px; 
+        top: 6em; 
+    }
+
+    #pinterestFooter, footer {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width:1281px) {
+
+    #smartphoneSearchBar {
+        display: none;
+    }
+
+    .divLogo, .divBell, .divMessage, .divUserProfile, .divAccount {
+        padding: 0 12px 0 12px;
+    }
+
+    .mainGallery {
+        padding: 0 2em;
+        columns: 7;
+        gap: 18px;
+        top: 6em;
+    }
+
+    #pinterestFooter, footer {
+        display: none;
+    }
+}

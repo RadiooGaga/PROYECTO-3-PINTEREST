@@ -1,0 +1,60 @@
+@media screen and (max-width:480px) {
+
+    #smartphoneSearchBar {
+        display: flex;
+        width: 100%;
+    }
+
+    .divSearchSmartphone {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        padding: var(--padding-s);
+        justify-content: center;
+        align-items: center;
+        background-color: var(--rtc-color-white);
+        position: fixed;
+        z-index: 1;
+    }
+    
+    .phoneClassSearchPlaceholder {
+        width: 85%;
+        height: 80%;
+        border-radius: 20px;
+        border: none;
+        padding: 0 10px 0 10px;
+        background-color: var(--rtc-color-lightGrey) ;
+        
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+
+    #smartphoneSearchBar {
+        display: flex;
+        width: 100%;
+    }
+
+    .divSearchSmartphone{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: var(--padding-l);
+        justify-content: center;
+        align-items: center;
+        background-color: var(--rtc-color-white);
+        position: fixed;
+        z-index: 1;
+    }
+
+    .phoneClassSearchPlaceholder {
+        width: 85%;
+        height: 90%;
+        border-radius: 20px;
+        border: none;
+        padding: 0 10px 0 10px;
+        background-color: var(--rtc-color-lightGrey) ;
+        
+    }
+}

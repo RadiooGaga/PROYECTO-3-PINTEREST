@@ -1,0 +1,95 @@
+import "./style.css";
+
+import { reset } from "./public/src/components/inicio/inicio.js";
+import { explorarButton } from "./public/src/components/explorar/explorar.js";
+import { crearButton } from "./public/src/components/crear/crear.js";
+import { searchBar, searchInfo } from "./public/src/components/busqueda/busqueda.js";
+import { userButton } from "./public/src/components/user/user.js";
+import { accountButton } from "./public/src/components/account/account.js";
+import { inicioButtonHouse } from "./public/src/components/FOOTER-SPECIAL/footer-inicio/footerInicio.js";
+import { createLupita } from "./public/src/components/FOOTER-SPECIAL/footer-lupa/footer-lupa.js";
+import { messagesButton } from "./public/src/components/FOOTER-SPECIAL/footer-messages/footer-messages.js";
+import { notificationsButton } from "./public/src/components/FOOTER-SPECIAL/footer-notifications/footer-notifications.js";
+
+
+//header
+const header = document.querySelector("header");
+const sectionHeader = document.querySelector("#pinterestHeader");
+const divLogo = document.createElement("div");
+divLogo.className = "divLogo";
+const imgLogo = document.createElement("img");
+imgLogo.className = "picLogo";
+imgLogo.src = "./public/assets/logos/pinterest-logo.jpeg";
+sectionHeader.appendChild(divLogo);
+divLogo.appendChild(imgLogo);
+
+const smartphoneBarSection = document.querySelector("#smartphoneSearchBar");
+header.appendChild(sectionHeader);
+header.appendChild(smartphoneBarSection);
+
+//Galeria
+const sectionPinterestGallery = document.querySelector("#pinterestGallery");
+const mainGallery = document.createElement("div");
+mainGallery.className = "mainGallery";
+sectionPinterestGallery.appendChild(mainGallery);
+
+
+//Footer
+const sectionFooter = document.querySelector("#pinterestFooter");
+const sectionIndexNames = document.querySelector(".indexNames");
+const divIndexNames = document.createElement("div");
+
+
+
+
+//div bandeja entrada smartphone
+const divMessages = document.createElement("div");
+divMessages.className = "divMessages";
+const imgMessage = document.createElement("img");
+imgMessage.className = "messageImg";
+imgMessage.src = "./public/assets/icons/messageIcon.svg";
+
+//div usuario smartphone
+const divUser = document.createElement("div");
+divUser.className = "divUser";
+const imgUser = document.createElement("img");
+imgUser.className = "imgUser";
+imgUser.src = "./public/assets/icons/userIcon.svg";
+
+
+reset(sectionHeader, mainGallery);
+explorarButton(sectionHeader, "Explorar");
+crearButton(sectionHeader, "Crear");
+searchBar(sectionHeader, mainGallery,"Buscar");
+searchInfo("random", mainGallery);
+createLupita(sectionFooter, mainGallery);
+notificationsButton(sectionHeader,"./public/assets/icons/bellIcon.svg");
+messagesButton(sectionHeader, "./public/assets/icons/messageIcon.svg");
+userButton(sectionHeader, "./public/assets/icons/userIcon.svg");
+accountButton(sectionHeader, "./public/assets/icons/flecha-hacia-abajo.png");
+inicioButtonHouse(sectionFooter, mainGallery, "./public/assets/icons/home.svg");
+
+
+sectionFooter.appendChild(divMessages);
+divMessages.appendChild(imgMessage);
+sectionFooter.appendChild(divUser);
+divUser.appendChild(imgUser);
+sectionIndexNames.appendChild(divIndexNames);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

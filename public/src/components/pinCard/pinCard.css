@@ -1,0 +1,75 @@
+
+.pinterestCard {
+    position: relative;
+    max-width: 320px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.pin:hover {
+    filter: brightness(50%);
+}
+
+.pin {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.keepButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 6em;
+    height: 2.5em;
+    border: none;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.keepButton:hover {
+    cursor: pointer;
+    color: black;
+}
+
+
+@media screen and (max-width:480px) {
+    .pinterestCard {
+        margin-bottom: 10px;
+    }
+
+    .keepButton {
+        font-size: 8px;
+        top: 6px;
+        right: 6px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+
+    .keepButton {
+        font-size: 10px;
+        top: 8px;
+        right: 8px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+    .keepButton {
+        font-size: 10px;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1280px) {
+
+    .keepButton {
+        font-size: 15px;
+        top: 10px;
+        right: 10px;
+    }
+}
