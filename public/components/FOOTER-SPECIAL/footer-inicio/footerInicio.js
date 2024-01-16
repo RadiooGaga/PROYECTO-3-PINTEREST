@@ -6,7 +6,7 @@ export const inicioButtonHouse = (mainGallery) => {
     const house = document.createElement("img");
     house.id = "houseId";
     house.className = "house";
-    house.src = "./public/src/assets/icons/home.svg" ;
+    house.src = "./public/assets/icons/home.svg" ;
 
     mainGallery.appendChild(divHouseReset);
     mainGallery.insertBefore(divHouseReset, mainGallery.firstChild);
