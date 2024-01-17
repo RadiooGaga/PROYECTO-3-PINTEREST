@@ -15,4 +15,8 @@ export const inicioButtonHouse = (mainGallery) => {
     divHouseReset.addEventListener('click', (event) => {
         window.location.href = mainGallery;
     })
+
+    divHouseReset.addEventListener('touchstart', (event) => {
+        window.location.href = mainGallery;
+    })
 }

@@ -14,5 +14,9 @@ export const reset = (mainGallery) => {
         window.location.href = mainGallery;
     })
 
+    resetButton.addEventListener('touchstart', (event) => {
+        window.location.href = mainGallery;
+    })
+
 }
 
