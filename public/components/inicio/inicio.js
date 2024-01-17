@@ -11,10 +11,7 @@ export const reset = (mainGallery) => {
     divReset.appendChild(resetButton);
     
     resetButton.addEventListener('click', (event) => {
-        window.location.href = mainGallery;
-    })
-
-    resetButton.addEventListener('touchstart', (event) => {
+        mainGallery.innerHTML = "";
         window.location.href = mainGallery;
     })
 

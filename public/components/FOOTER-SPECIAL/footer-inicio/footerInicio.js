@@ -11,12 +11,9 @@ export const inicioButtonHouse = (mainGallery) => {
     mainGallery.appendChild(divHouseReset);
     mainGallery.insertBefore(divHouseReset, mainGallery.firstChild);
     divHouseReset.appendChild(house);
-    
-    divHouseReset.addEventListener('click', (event) => {
-        window.location.href = mainGallery;
-    })
 
     divHouseReset.addEventListener('touchstart', (event) => {
+        mainGallery.innerHTML = "";
         window.location.href = mainGallery;
     })
 }
