@@ -30,8 +30,7 @@ header.appendChild(smartphoneBarSection);
 //Galeria
 const sectionPinterestGallery = document.querySelector("#pinterestGallery");
 const mainGallery = document.createElement("div");
-mainGallery.id = "mainGalleryId"
-mainGallery.className = "mainGallery";
+mainGallery.id = "mainGalleryId";
 sectionPinterestGallery.appendChild(mainGallery);
 
 
