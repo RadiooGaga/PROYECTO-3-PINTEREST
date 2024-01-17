@@ -1,3 +1,4 @@
+import { searchInfo } from "../../busqueda/busqueda.js";
 
 export const inicioButtonHouse = (mainGallery) => {
     
@@ -13,7 +14,8 @@ export const inicioButtonHouse = (mainGallery) => {
     divHouseReset.appendChild(house);
 
     divHouseReset.addEventListener('touchstart', (event) => {
-        mainGallery.innerHTML = "";
-        window.location.href = mainGallery;
+        const gallery = document.getElementById("mainGalleryId");
+        gallery.innerHTML = "";
+        searchInfo("random", gallery);
     })
 }

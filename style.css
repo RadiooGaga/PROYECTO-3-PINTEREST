@@ -97,7 +97,7 @@
     flex-wrap: wrap;
 }
 
-.mainGallery {
+#mainGallerId {
     width: 100%;
     padding: 0.5em 3em;
     justify-content: center;
@@ -144,7 +144,7 @@
         align-items: center;
     }
 
-    .mainGallery {
+    #mainGalleryId {
         padding: 1em;
         columns: 2;
         gap: 8px;
@@ -212,7 +212,7 @@
         gap: 12px;
     }
 
-    .mainGallery {
+    #mainGalleryId {
         padding: 1em;
         columns: 3;
         gap: 12px;
@@ -241,7 +241,7 @@
         padding: var(--padding-xs);
     }
 
-    .mainGallery {
+    #mainGalleryId {
         padding: 0 1em;
         columns: 5;
         gap: 16px; 
@@ -266,10 +266,10 @@
 
     .inicioButton, .explorarButton, .crearButton {
         font-size: var(--font-size-m);
-        padding: var(--padding-s);
+        padding: var(--padding-m);
     }
 
-    .mainGallery {
+    #mainGalleryId {
         padding: 0 2em;
         columns: 6;
         gap: 16px; 
@@ -293,7 +293,12 @@
         padding: 0 12px 0 12px;
     }
 
-    .mainGallery {
+    .inicioButton, .explorarButton, .crearButton {
+        font-size: var(--font-size-m);
+        padding: var(--padding-m);
+    }
+
+    #mainGalleryId {
         padding: 0 2em;
         columns: 7;
         gap: 18px;

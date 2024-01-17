@@ -1,3 +1,4 @@
+import { searchInfo } from "../busqueda/busqueda.js";
 
 export const reset = (mainGallery) => {
 
@@ -11,8 +12,9 @@ export const reset = (mainGallery) => {
     divReset.appendChild(resetButton);
     
     resetButton.addEventListener('click', (event) => {
-        mainGallery.innerHTML = "";
-        window.location.href = mainGallery;
+        const gallery = document.getElementById("mainGalleryId");
+        gallery.innerHTML = "";
+        searchInfo("random", gallery);
     })
 
 }
