@@ -31,8 +31,11 @@ header.appendChild(smartphoneBarSection);
 const sectionPinterestGallery = document.querySelector("#pinterestGallery");
 const mainGallery = document.createElement("div");
 mainGallery.id = "mainGalleryId";
-//mainGallery.className = "mainGallery";
-sectionPinterestGallery.appendChild(mainGallery);
+const noPicsAvailableDiv = document.createElement("div");
+noPicsAvailableDiv.id = "noPicsAvailableId";
+
+
+
 
 
 //Footer
@@ -62,7 +65,7 @@ reset(sectionHeader, mainGallery);
 explorarButton(sectionHeader, "Explorar");
 crearButton(sectionHeader, "Crear");
 searchBar(sectionHeader, mainGallery,"Buscar");
-searchInfo("random", mainGallery);
+searchInfo("random", mainGallery, noPicsAvailableDiv);
 createLupita(sectionFooter, mainGallery);
 notificationsButton(sectionHeader,"./assets/icons/bellIcon.svg");
 messagesButton(sectionHeader, "./assets/icons/messageIcon.svg");
@@ -71,6 +74,8 @@ accountButton(sectionHeader, "./assets/icons/flecha-hacia-abajo.png");
 inicioButtonHouse(sectionFooter, mainGallery, "./assets/icons/home.svg");
 
 
+sectionPinterestGallery.appendChild(mainGallery);
+sectionPinterestGallery.appendChild(noPicsAvailableDiv);
 sectionFooter.appendChild(divMessages);
 divMessages.appendChild(imgMessage);
 sectionFooter.appendChild(divUser);
