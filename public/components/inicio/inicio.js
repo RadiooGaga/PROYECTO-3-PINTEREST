@@ -12,7 +12,7 @@ export const reset = (mainGallery) => {
     divReset.appendChild(resetButton);
     
     resetButton.addEventListener('click', (event) => {
-        const gallery = document.getElementById("mainGalleryId");
+        const gallery = document.getElementById("pinterestGallery");
         gallery.innerHTML = "";
         searchInfo("random", gallery);
     })

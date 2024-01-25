@@ -14,7 +14,7 @@ export const inicioButtonHouse = (mainGallery) => {
     divHouseReset.appendChild(house);
 
     divHouseReset.addEventListener('touchstart', (event) => {
-        const gallery = document.getElementById("mainGalleryId");
+        const gallery = document.getElementById("pinterestGallery");
         gallery.innerHTML = "";
         searchInfo("random", gallery);
     })
