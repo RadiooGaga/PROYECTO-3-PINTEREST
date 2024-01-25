@@ -1,7 +1,7 @@
 
 import {searchBarSmartphone} from "../smartphoneSearchBar/smartphoneSearchBar.js";
 
-export const createLupita = (parentDiv, mainGallery) => {
+export const createLupita = (parentDiv, sectionPinterestGallery) => {
 
     const divLupa = document.createElement("div");
     divLupa.className = "divLupa";
@@ -16,7 +16,7 @@ export const createLupita = (parentDiv, mainGallery) => {
 
         const smartphoneSearchBarContainer = document.getElementById("smartphoneSearchBar");
         smartphoneSearchBarContainer.innerHTML = "";
-        searchBarSmartphone(smartphoneSearchBarContainer, mainGallery, "Buscar"); 
+        searchBarSmartphone(smartphoneSearchBarContainer, sectionPinterestGallery, "Buscar"); 
     })
 }
 

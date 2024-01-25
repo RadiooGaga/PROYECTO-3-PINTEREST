@@ -1,7 +1,7 @@
 import "./smartphoneSearchBar.css";
 import {searchInfo} from "../../busqueda/busqueda.js";
 
-export const searchBarSmartphone = (parentDiv, mainGallery, text, sectionPinterestGallery) => {
+export const searchBarSmartphone = (parentDiv, sectionPinterestGallery, text) => {
 
     const smartphoneBarDiv = document.createElement("div");
     smartphoneBarDiv.className = "divSearchSmartphone";
@@ -18,9 +18,9 @@ export const searchBarSmartphone = (parentDiv, mainGallery, text, sectionPintere
     
         if (event.key === "Enter" && event.type === 'keydown') {
         const inputData = document.getElementById("phoneSearchPlaceholderId").value;
-        mainGallery.innerHTML = "";
+        sectionPinterestGallery.innerHTML = "";
         parentDiv.innerHTML = "";
-        searchInfo(inputData, mainGallery, sectionPinterestGallery);
+        searchInfo(inputData, sectionPinterestGallery);
         }
     }) 
 }
