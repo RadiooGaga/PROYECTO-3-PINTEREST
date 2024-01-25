@@ -44,9 +44,7 @@ export const searchInfo = (searchData, mainGallery, noPicsAvailableDiv) => {
                 pages = 5
             } 
             if (pages === 0) {
-                noPicsAvailableDiv = document.getElementById("noPicsAvailableId");
-                noPicsAvailableDiv.innerHTML = "No hay fotos con los criterios de búsqueda";
-                
+                noPicsAvailableDiv.innerHTML = "";
             }
             
             for (let page = 1; page <= pages; page++) {

@@ -33,6 +33,7 @@ const mainGallery = document.createElement("div");
 mainGallery.id = "mainGalleryId";
 const noPicsAvailableDiv = document.createElement("div");
 noPicsAvailableDiv.id = "noPicsAvailableId";
+noPicsAvailableDiv.textContent = "No hay fotos con los criterios de búsqueda";
 
 
 
