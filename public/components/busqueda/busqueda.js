@@ -44,7 +44,7 @@ export const searchInfo = (searchData, mainGallery, noPicsAvailableDiv) => {
                 pages = 5
             } 
             if (pages === 0) {
-                noPicsAvailableDiv.innerHTML = "";
+                noPicsAvailableDiv = document.getElementById("noPicsAvailableId").textContent; 
             }
             
             for (let page = 1; page <= pages; page++) {
