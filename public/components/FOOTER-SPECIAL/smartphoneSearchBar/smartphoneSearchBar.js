@@ -1,7 +1,7 @@
 import "./smartphoneSearchBar.css";
 import {searchInfo} from "../../busqueda/busqueda.js";
 
-export const searchBarSmartphone = (parentDiv, mainGallery, text) => {
+export const searchBarSmartphone = (parentDiv, mainGallery, text, sectionPinterestGallery) => {
 
     const smartphoneBarDiv = document.createElement("div");
     smartphoneBarDiv.className = "divSearchSmartphone";
@@ -20,7 +20,7 @@ export const searchBarSmartphone = (parentDiv, mainGallery, text) => {
         const inputData = document.getElementById("phoneSearchPlaceholderId").value;
         mainGallery.innerHTML = "";
         parentDiv.innerHTML = "";
-        searchInfo(inputData, mainGallery);
+        searchInfo(inputData, mainGallery, sectionPinterestGallery);
         }
     }) 
 }

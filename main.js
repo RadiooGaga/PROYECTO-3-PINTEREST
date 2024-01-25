@@ -31,20 +31,14 @@ header.appendChild(smartphoneBarSection);
 const sectionPinterestGallery = document.querySelector("#pinterestGallery");
 const mainGallery = document.createElement("div");
 mainGallery.id = "mainGalleryId";
-const noPicsAvailableDiv = document.createElement("div");
-noPicsAvailableDiv.id = "noPicsAvailableId";
-noPicsAvailableDiv.textContent = "No hay fotos con los criterios de búsqueda";
-
-
-
+//mainGallery.className = "mainGallery";
+sectionPinterestGallery.appendChild(mainGallery);
 
 
 //Footer
 const sectionFooter = document.querySelector("#pinterestFooter");
 const sectionIndexNames = document.querySelector(".indexNames");
 const divIndexNames = document.createElement("div");
-
-
 
 
 //div bandeja entrada smartphone
@@ -63,10 +57,11 @@ imgUser.src = "./assets/icons/userIcon.svg";
 
 
 reset(sectionHeader, mainGallery);
+//resetX(mainGallery);
 explorarButton(sectionHeader, "Explorar");
 crearButton(sectionHeader, "Crear");
 searchBar(sectionHeader, mainGallery,"Buscar");
-searchInfo("random", mainGallery, noPicsAvailableDiv);
+searchInfo("random", mainGallery);
 createLupita(sectionFooter, mainGallery);
 notificationsButton(sectionHeader,"./assets/icons/bellIcon.svg");
 messagesButton(sectionHeader, "./assets/icons/messageIcon.svg");
@@ -75,8 +70,6 @@ accountButton(sectionHeader, "./assets/icons/flecha-hacia-abajo.png");
 inicioButtonHouse(sectionFooter, mainGallery, "./assets/icons/home.svg");
 
 
-sectionPinterestGallery.appendChild(mainGallery);
-sectionPinterestGallery.appendChild(noPicsAvailableDiv);
 sectionFooter.appendChild(divMessages);
 divMessages.appendChild(imgMessage);
 sectionFooter.appendChild(divUser);

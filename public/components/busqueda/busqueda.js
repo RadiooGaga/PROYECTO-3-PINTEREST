@@ -28,7 +28,7 @@ export const searchBar = (parentDiv, mainGallery, text) => {
 
 
 
-export const searchInfo = (searchData, mainGallery, noPicsAvailableDiv) => {
+export const searchInfo = (searchData, mainGallery) => {
   
     let unsplashId = "74vRF6e1l9a6WTlt7b7Nh9VT5zqNeqK-APQEnqePUHo";
     let url =  `https://api.unsplash.com/search/photos?query=${searchData}&per_page=50&client_id=${unsplashId}`;
@@ -44,7 +44,12 @@ export const searchInfo = (searchData, mainGallery, noPicsAvailableDiv) => {
                 pages = 5
             } 
             if (pages === 0) {
-                noPicsAvailableDiv = document.getElementById("noPicsAvailableId").textContent; 
+
+                const sectionPinterestGallery = document.getElementById("pinterestGallery");
+                const noPicsAvailable = document.createElement("div");
+                noPicsAvailable.id = "noPicsAvailableId";
+                sectionPinterestGallery.appendChild(noPicsAvailable);
+                noPicsAvailable.innerHTML = "No hay fotos con los criterios de búsqueda";
             }
             
             for (let page = 1; page <= pages; page++) {
