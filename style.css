@@ -90,13 +90,11 @@
 
 #noPicsAvailableId {
     display: flex;
-    width: 80%;
+    width: 90%;
     justify-content: center;
-    position: relative;
-    padding: var(--padding-l);
+    text-align: center;
+    padding: var(--padding-m);
     background-color: var(--rtc-color-lightGrey);
-    top: 7em;
-    left: 7em;
     height: auto;
     z-index: 0;
 }
@@ -107,6 +105,7 @@
 
 #pinterestGallery {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -262,6 +261,17 @@
         top: 6em;  
     }
 
+    #noPicsAvailableId {
+        width: 70%;
+        position: relative;
+        top: 5em;
+        left: 3em;
+        padding: var(--padding-m);
+        background-color: var(--rtc-color-lightGrey);
+        height: auto;
+        z-index: 0;
+    }
+
     #pinterestFooter, footer {
         display: none;
     }
@@ -289,6 +299,17 @@
         gap: 16px; 
         position: relative;
         top: 6em; 
+    }
+
+    #noPicsAvailableId {
+        width: 70%;
+        position: relative;
+        top: 5em;
+        left: 3em;
+        padding: var(--padding-m);
+        background-color: var(--rtc-color-lightGrey);
+        height: auto;
+        z-index: 0;
     }
 
     #pinterestFooter, footer {
@@ -319,6 +340,17 @@
         gap: 18px;
         position: relative;
         top: 6em;
+    }
+
+    #noPicsAvailableId {
+        width: 70%;
+        position: relative;
+        top: 5em;
+        left: 3em;
+        padding: var(--padding-m);
+        background-color: var(--rtc-color-lightGrey);
+        height: auto;
+        z-index: 0;
     }
 
     #pinterestFooter, footer {
