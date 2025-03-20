@@ -1,15 +1,15 @@
 import "./style.css";
 
-import { reset } from "./public/components/inicio/inicio.js";
-import { explorarButton } from "./public/components/explorar/explorar.js";
-import { crearButton } from "./public/components/crear/crear.js";
-import { searchBar, searchInfo } from "./public/components/busqueda/busqueda.js";
-import { userButton } from "./public/components/user/user.js";
-import { accountButton } from "./public/components/account/account.js";
-import { inicioButtonHouse } from "./public/components/FOOTER-SPECIAL/footer-inicio/footerInicio.js";
-import { createLupita } from "./public/components/FOOTER-SPECIAL/footer-lupa/footer-lupa.js";
-import { messagesButton } from "./public/components/FOOTER-SPECIAL/footer-messages/footer-messages.js";
-import { notificationsButton } from "./public/components/FOOTER-SPECIAL/footer-notifications/footer-notifications.js";
+import { reset } from "./src/components/inicio/inicio.js";
+import { explorarButton } from "./src/components/explorar/explorar.js";
+import { crearButton } from "./src/components/crear/crear.js";
+import { searchBar, searchInfo } from "./src/components/busqueda/busqueda.js";
+import { userButton } from "./src/components/user/user.js";
+import { accountButton } from "./src/components/account/account.js";
+import { inicioButtonHouse } from "./src/components/FOOTER-SPECIAL/footer-inicio/footerInicio.js";
+import { createLupita } from "./src/components/FOOTER-SPECIAL/footer-lupa/footer-lupa.js";
+import { messagesButton } from "./src/components/FOOTER-SPECIAL/footer-messages/footer-messages.js";
+import { notificationsButton } from "./src/components/FOOTER-SPECIAL/footer-notifications/footer-notifications.js";
 
 
 //header
